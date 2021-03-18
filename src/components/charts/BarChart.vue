@@ -1,29 +1,20 @@
 <template>
-  <div>
-    <header><h1>Jcheez's Zi Char</h1></header>
-    <router-view></router-view>
+  <div class="chart">
+    <Chart></Chart>
   </div>
 </template>
 
 <script>
-
-
-
+import Chart from "./BarChart.js";
 export default {
-  name: 'App',
-  data(){
-    return{
-      
-    }
-  },
   components: {
-    //'PageCon':PageContent
+    Chart
   }
-}
+};
 </script>
 
 <style>
-header {
+#chart {
   background-color: rgb(98, 142, 223);
   padding: 30px;
   text-align: center;
